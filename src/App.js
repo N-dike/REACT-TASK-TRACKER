@@ -25,7 +25,7 @@ const App = () => {
         // Fetch Tasks
         const fetchTasks = async() => {
                 const res = await fetch(
-                    'http://localhost:5000/tasks')
+                    'https://my-json-server.typicode.com/N-dike/REACT-TASK-TRACKER/tasks')
                 const data = await res.json()
 
 
@@ -34,7 +34,7 @@ const App = () => {
             // Fetch Task
         const fetchTask = async(id) => {
             const res = await fetch(
-                `http://localhost:5000/tasks/${id}`)
+                `https://my-json-server.typicode.com/N-dike/REACT-TASK-TRACKER/tasks/${id}`)
             const data = await res.json()
 
 
@@ -43,7 +43,7 @@ const App = () => {
 
         // Add Task
         const addTask = async(task) => {
-                const res = await fetch('http://localhost:5000/tasks', {
+                const res = await fetch('https://my-json-server.typicode.com/N-dike/REACT-TASK-TRACKER/tasks', {
                     method: 'POST',
                     headers: {
                         'Content-type': 'application/json',
@@ -59,7 +59,7 @@ const App = () => {
             }
             // delete task
         const deleteTask = async(id) => {
-                await fetch(`http://localhost:5000/tasks/${id
+                await fetch(`https://my-json-server.typicode.com/N-dike/REACT-TASK-TRACKER/tasks/${id
 }`, {
                     method: 'DELETE',
                 })
@@ -74,7 +74,7 @@ const App = () => {
             }
 
             const res = await fetch(`
-        http://localhost:5000/tasks/${id}`, {
+        https://my-json-server.typicode.com/N-dike/REACT-TASK-TRACKER/tasks/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
