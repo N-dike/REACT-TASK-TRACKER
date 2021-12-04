@@ -34,4 +34,3 @@ export default Header
 // an if statement
 //{X ? 'YES' : 'No' }
 
-// YAHAWAH WA YAHAWASHI IBAD YA
